@@ -1,0 +1,51 @@
+<xml version="1.0">
+<dashboard>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.CameraServerViewer">
+		<location x="194" y="30"/>
+		<width>543</width>
+		<height>407</height>
+		<property name="Camera Choice" value=""/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="793" y="10"/>
+		<property name="Text" value="Connected:"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.ConnectionIndicator">
+		<location x="855" y="1"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="0" y="90"/>
+		<property name="Text" value="Toggle Grabber (Cube): Side Button"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="0" y="75"/>
+		<property name="Text" value="Toggle Grabber (Cone): Trigger"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="0" y="60"/>
+		<property name="Text" value="Arm Down: Bottom-Left Button"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="0" y="45"/>
+		<property name="Text" value="Arm Up: Top-Left Button"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="0" y="30"/>
+		<property name="Text" value="Unextend Arm: Bottom-Right Button"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="1" y="15"/>
+		<property name="Text" value="Extend Arm: Top-Right Button"/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="0" y="15"/>
+		<property name="Text" value=""/>
+	</static-widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="0" y="0"/>
+		<property name="Text" value="Move: Left Joystick (Controller)"/>
+	</static-widget>
+</dashboard>
+<live-window>
+</live-window>
+</xml>

@@ -1,1 +1,3 @@
 __pycache__/
+src/commands/__pycache__/
+src/subsystems/__pycache__/
