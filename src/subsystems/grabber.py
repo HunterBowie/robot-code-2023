@@ -1,6 +1,8 @@
 import wpilib, wpilib.drive, commands2, src.constants as constants
 
 class Grabber(commands2.SubsystemBase):
+    """Repersents the pneumatic grabber mechanism."""
+    
     def __init__(self):
         super().__init__()
         self.solenoid_right = wpilib.Solenoid(constants.PNEUMATICS_MODULE_ID,

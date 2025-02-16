@@ -1,6 +1,8 @@
 import wpilib, wpilib.drive, rev, commands2
 
 class DriveTrain(commands2.SubsystemBase):
+    """Repersents the control of the driving wheels."""
+    
     def __init__(self):
         super().__init__()
         self.front_right = rev.CANSparkMax(4, rev.CANSparkMax.MotorType.kBrushed)

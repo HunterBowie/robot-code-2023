@@ -1,6 +1,7 @@
 import wpilib, commands2, subsystems, src.constants as constants
 
 class XboxcontrollerDrive(commands2.CommandBase):
+    """Repersents the command to drive using the Xbox controller."""
     def __init__(self, xboxcontroller: wpilib.XboxController, drive_train: subsystems.DriveTrain):
         super().__init__()
         self.xboxcontroller = xboxcontroller

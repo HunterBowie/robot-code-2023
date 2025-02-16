@@ -4,21 +4,14 @@ import subsystems, src.constants as constants
 
 
 class RotateArm(commands2.CommandBase):
-    """
-    Rotates for a specified amount of time
-
-    :param float time: Time to drive for in seconds
-    :param float speed: How fast to drive (-1.0 to 1.0)
-    :param float rotation: How fast to rotate (-1.0 to 1.0)
-    :param DriveTrain drive_train: DriveTrain to execute command on
-    """
+    """Repersents the command to rotate the arm in a direction for a specified time."""
 
     def __init__(self, arm: subsystems.Arm, direction: constants.RotationDirection, 
-                 time: float):
+                 time_seconds: float):
         super().__init__()
         self.arm = arm
         self.direction = direction
-        self.time = time
+        self.time_seconds = time_seconds
         self.timer = wpilib.Timer()
         self.addRequirements(arm)
 
@@ -34,4 +27,4 @@ class RotateArm(commands2.CommandBase):
         self.arm.stop_rotating()
 
     def isFinished(self) -> bool:
-        return self.timer.get() >= self.time
+        return self.timer.get() >= self.time_seconds

@@ -2,6 +2,8 @@ import wpilib, commands2
 import src.constants as constants, subsystems
 
 class Stabilize(commands2.CommandBase):
+    """Repersents the command to auto stabilize the robot on a tilting platform."""
+    
     def __init__(self, drive_train: subsystems.DriveTrain, gyroscope: wpilib.ADIS16448_IMU):
         super().__init__()
         self.drive_train = drive_train

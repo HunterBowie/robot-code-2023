@@ -1,6 +1,8 @@
 import wpilib, wpilib.drive, rev, commands2, src.constants as constants
 
 class Arm(commands2.SubsystemBase):
+    """Repersents the robotic arm."""
+    
     def __init__(self):
         super().__init__()
         self.extension_motor = rev.CANSparkMax(5, rev.CANSparkMax.MotorType.kBrushed)
