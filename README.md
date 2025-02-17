@@ -43,6 +43,10 @@ be considered flat/stabalized. If our gyroscope was giving us values outside of 
 This project was made in python using [RobotPy](https://robotpy.readthedocs.io/en/stable/) but a [previous robot](https://github.com/TempletonRobotics7190/RapidReact2022) I worked on in used Java instead. 
 
 
+
+https://github.com/user-attachments/assets/ce225987-dc98-4164-b63c-19827797757e
+
+
 ## Robot in Action
 
 <video src="robotics.mov" width="320" height="240" controls></video>
