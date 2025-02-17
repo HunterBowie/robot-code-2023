@@ -8,6 +8,7 @@ This code is for a robot that competed in the 2023 [First Robotics Competion (FR
 ![Robot](./robot.jpg)
 
 
+
 ## About the Code
 
 The project is organized according to the [command based programming](https://docs.wpilib.org/en/stable/docs/software/commandbased/what-is-command-based.html) design pattern/framework. This means that each part of the robot is a class in the subsystems folder and each keybind or autonomous behaviour is a class in the commands folder. The robot_container file has most of the configuration code that sets up things like keybindings and the rest of the functionality is mostly distributed among the subsytems and commands.
@@ -40,6 +41,12 @@ Once we got the gyroscope properly calibrated, it was pretty straightforward to 
 be considered flat/stabalized. If our gyroscope was giving us values outside of that range, we drive a set speed in the opposite direction.
 
 This project was made in python using [RobotPy](https://robotpy.readthedocs.io/en/stable/) but a [previous robot](https://github.com/TempletonRobotics7190/RapidReact2022) I worked on in used Java instead. 
+
+
+## Robot in Action
+
+<video src="robotics.mov" width="320" height="240" controls></video>
+
 
 ## Other Contributors  
 - [Kian Khadempour](https://github.com/KianKhadempour)
